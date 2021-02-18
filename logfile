@@ -496,3 +496,82 @@
 2021-02-18 15:26:34.567 GMT [15402] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
 2021-02-18 15:26:34.567 GMT [15402] DETAIL:  Key (id)=(116) is still referenced from table "doses".
 2021-02-18 15:26:34.567 GMT [15402] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:34:30.380 GMT [15723] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:34:30.380 GMT [15723] DETAIL:  Key (id)=(133) is still referenced from table "doses".
+2021-02-18 15:34:30.380 GMT [15723] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:37:21.219 GMT [16037] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:37:21.219 GMT [16037] DETAIL:  Key (id)=(150) is still referenced from table "doses".
+2021-02-18 15:37:21.219 GMT [16037] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:38:22.823 GMT [16199] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:38:22.823 GMT [16199] DETAIL:  Key (id)=(167) is still referenced from table "doses".
+2021-02-18 15:38:22.823 GMT [16199] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:38:36.300 GMT [16251] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:38:36.300 GMT [16251] DETAIL:  Key (id)=(184) is still referenced from table "doses".
+2021-02-18 15:38:36.300 GMT [16251] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:40:46.614 GMT [16575] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:40:46.614 GMT [16575] DETAIL:  Key (id)=(201) is still referenced from table "doses".
+2021-02-18 15:40:46.614 GMT [16575] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:51:04.811 GMT [16936] ERROR:  database "rails_mister_cocktail_development" is being accessed by other users
+2021-02-18 15:51:04.811 GMT [16936] DETAIL:  There are 2 other sessions using the database.
+2021-02-18 15:51:04.811 GMT [16936] STATEMENT:  DROP DATABASE IF EXISTS "rails_mister_cocktail_development"
+2021-02-18 15:51:18.582 GMT [16969] ERROR:  database "rails_mister_cocktail_development" is being accessed by other users
+2021-02-18 15:51:18.582 GMT [16969] DETAIL:  There are 2 other sessions using the database.
+2021-02-18 15:51:18.582 GMT [16969] STATEMENT:  DROP DATABASE IF EXISTS "rails_mister_cocktail_development"
+2021-02-18 15:52:59.468 GMT [18062] ERROR:  database "rails_mister_cocktail_development" is being accessed by other users
+2021-02-18 15:52:59.468 GMT [18062] DETAIL:  There is 1 other session using the database.
+2021-02-18 15:52:59.468 GMT [18062] STATEMENT:  DROP DATABASE IF EXISTS "rails_mister_cocktail_development"
+2021-02-18 15:57:45.692 GMT [19295] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:57:45.692 GMT [19295] DETAIL:  Key (id)=(17) is still referenced from table "doses".
+2021-02-18 15:57:45.692 GMT [19295] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:58:24.905 GMT [19414] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:58:24.905 GMT [19414] DETAIL:  Key (id)=(34) is still referenced from table "doses".
+2021-02-18 15:58:24.905 GMT [19414] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 15:59:34.894 GMT [19483] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 15:59:34.894 GMT [19483] DETAIL:  Key (id)=(51) is still referenced from table "doses".
+2021-02-18 15:59:34.894 GMT [19483] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:00:52.763 GMT [19593] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:00:52.763 GMT [19593] DETAIL:  Key (id)=(68) is still referenced from table "doses".
+2021-02-18 16:00:52.763 GMT [19593] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:01:22.764 GMT [19651] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:01:22.764 GMT [19651] DETAIL:  Key (id)=(85) is still referenced from table "doses".
+2021-02-18 16:01:22.764 GMT [19651] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:01:55.758 GMT [19738] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:01:55.758 GMT [19738] DETAIL:  Key (id)=(102) is still referenced from table "doses".
+2021-02-18 16:01:55.758 GMT [19738] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:03:13.619 GMT [19868] ERROR:  database "rails_mister_cocktail_development" is being accessed by other users
+2021-02-18 16:03:13.619 GMT [19868] DETAIL:  There is 1 other session using the database.
+2021-02-18 16:03:13.619 GMT [19868] STATEMENT:  DROP DATABASE IF EXISTS "rails_mister_cocktail_development"
+2021-02-18 16:03:21.736 GMT [19916] ERROR:  database "rails_mister_cocktail_development" already exists
+2021-02-18 16:03:21.736 GMT [19916] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_development" ENCODING = 'unicode'
+2021-02-18 16:03:21.746 GMT [19918] ERROR:  database "rails_mister_cocktail_test" already exists
+2021-02-18 16:03:21.746 GMT [19918] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_test" ENCODING = 'unicode'
+2021-02-18 16:05:27.442 GMT [20711] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:05:27.442 GMT [20711] DETAIL:  Key (id)=(17) is still referenced from table "doses".
+2021-02-18 16:05:27.442 GMT [20711] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:05:51.467 GMT [20763] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:05:51.467 GMT [20763] DETAIL:  Key (id)=(34) is still referenced from table "doses".
+2021-02-18 16:05:51.467 GMT [20763] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:06:54.244 GMT [20855] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:06:54.244 GMT [20855] DETAIL:  Key (id)=(51) is still referenced from table "doses".
+2021-02-18 16:06:54.244 GMT [20855] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:07:27.596 GMT [20929] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:07:27.596 GMT [20929] DETAIL:  Key (id)=(68) is still referenced from table "doses".
+2021-02-18 16:07:27.596 GMT [20929] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:12:41.391 GMT [21167] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:12:41.391 GMT [21167] DETAIL:  Key (id)=(85) is still referenced from table "doses".
+2021-02-18 16:12:41.391 GMT [21167] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:13:03.893 GMT [21329] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:13:03.893 GMT [21329] DETAIL:  Key (id)=(102) is still referenced from table "doses".
+2021-02-18 16:13:03.893 GMT [21329] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:15:35.925 GMT [21521] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:15:35.925 GMT [21521] DETAIL:  Key (id)=(119) is still referenced from table "doses".
+2021-02-18 16:15:35.925 GMT [21521] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:26:23.551 GMT [23377] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:26:23.551 GMT [23377] DETAIL:  Key (id)=(1) is still referenced from table "doses".
+2021-02-18 16:26:23.551 GMT [23377] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:27:01.655 GMT [23474] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:27:01.655 GMT [23474] DETAIL:  Key (id)=(1) is still referenced from table "doses".
+2021-02-18 16:27:01.655 GMT [23474] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 16:32:04.194 GMT [23898] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 16:32:04.194 GMT [23898] DETAIL:  Key (id)=(136) is still referenced from table "doses".
+2021-02-18 16:32:04.194 GMT [23898] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
