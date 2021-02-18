@@ -14,6 +14,8 @@ drink = JSON.parse(drink_serialized)
 
 puts "#{drink['name']}"
 
-# Ingredient.create(name: "lemon")
-# Ingredient.create(name: "ice")
-# Ingredient.create(name: "mint leaves")
+# Ingredient.create!(name: "lemon")
+# Ingredient.create!(name: "ice")
+# Ingredient.create!(name: "mint leaves")
+
+Cocktail.create!(name: "mohito")

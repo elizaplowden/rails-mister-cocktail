@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1>Cocktails</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-3">
+        <div class="cocktail-card">
+          <div class="cocktail-card-name">
+            <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %></h3>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <%= link_to 'Add a new cocktail', new_cocktail_path %>
+</div>
+
+
