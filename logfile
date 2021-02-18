@@ -1,0 +1,471 @@
+2021-02-18 12:28:50.938 GMT [3608] FATAL:  lock file "postmaster.pid" already exists
+2021-02-18 12:28:50.938 GMT [3608] HINT:  Is another postmaster (PID 3593) running in data directory "/usr/local/var/postgres"?
+2021-02-18 12:29:18.668 GMT [3727] LOG:  starting PostgreSQL 13.2 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 12.0.0 (clang-1200.0.32.29), 64-bit
+2021-02-18 12:29:18.669 GMT [3727] LOG:  listening on IPv6 address "::1", port 5432
+2021-02-18 12:29:18.669 GMT [3727] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-02-18 12:29:18.670 GMT [3727] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-02-18 12:29:18.673 GMT [3728] LOG:  database system was shut down at 2021-02-18 12:29:10 GMT
+2021-02-18 12:29:18.676 GMT [3727] LOG:  database system is ready to accept connections
+2021-02-18 12:29:31.820 GMT [3764] FATAL:  database "rails_mister_cocktail_development" does not exist
+2021-02-18 12:43:22.849 GMT [5294] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:43:22.849 GMT [5294] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:43:22.849 GMT [5294] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:43:58.997 GMT [5382] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:43:58.997 GMT [5382] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:43:58.997 GMT [5382] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:46:59.861 GMT [5773] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:46:59.861 GMT [5773] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:46:59.861 GMT [5773] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:47:43.707 GMT [5842] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:47:43.707 GMT [5842] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:47:43.707 GMT [5842] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:48:04.706 GMT [5965] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:48:04.706 GMT [5965] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:48:04.706 GMT [5965] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:48:29.777 GMT [6033] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:48:29.777 GMT [6033] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:48:29.777 GMT [6033] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:48:52.950 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.950 GMT [6130] DETAIL:  Failing row contains (1, ice, null, 2021-02-18 12:48:52.949561, 2021-02-18 12:48:52.949561).
+2021-02-18 12:48:52.950 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.953 GMT [6130] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:48:52.953 GMT [6130] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:48:52.953 GMT [6130] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:48:52.960 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.960 GMT [6130] DETAIL:  Failing row contains (2, lemon, null, 2021-02-18 12:48:52.960406, 2021-02-18 12:48:52.960406).
+2021-02-18 12:48:52.960 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.965 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.965 GMT [6130] DETAIL:  Failing row contains (3, lemon, null, 2021-02-18 12:48:52.965387, 2021-02-18 12:48:52.965387).
+2021-02-18 12:48:52.965 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.969 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.969 GMT [6130] DETAIL:  Failing row contains (4, lemon, null, 2021-02-18 12:48:52.96914, 2021-02-18 12:48:52.96914).
+2021-02-18 12:48:52.969 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.973 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.973 GMT [6130] DETAIL:  Failing row contains (5, lemon, null, 2021-02-18 12:48:52.972882, 2021-02-18 12:48:52.972882).
+2021-02-18 12:48:52.973 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.977 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.977 GMT [6130] DETAIL:  Failing row contains (6, lemon, null, 2021-02-18 12:48:52.977061, 2021-02-18 12:48:52.977061).
+2021-02-18 12:48:52.977 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.981 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.981 GMT [6130] DETAIL:  Failing row contains (7, Lemon, null, 2021-02-18 12:48:52.981081, 2021-02-18 12:48:52.981081).
+2021-02-18 12:48:52.981 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:48:52.986 GMT [6130] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:48:52.986 GMT [6130] DETAIL:  Failing row contains (8, ice, null, 2021-02-18 12:48:52.986113, 2021-02-18 12:48:52.986113).
+2021-02-18 12:48:52.986 GMT [6130] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.818 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.818 GMT [6202] DETAIL:  Failing row contains (9, ice, null, 2021-02-18 12:49:33.818108, 2021-02-18 12:49:33.818108).
+2021-02-18 12:49:33.818 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.827 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.827 GMT [6202] DETAIL:  Failing row contains (10, lemon, null, 2021-02-18 12:49:33.827277, 2021-02-18 12:49:33.827277).
+2021-02-18 12:49:33.827 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.838 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.838 GMT [6202] DETAIL:  Failing row contains (11, lemon, null, 2021-02-18 12:49:33.837704, 2021-02-18 12:49:33.837704).
+2021-02-18 12:49:33.838 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.841 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.841 GMT [6202] DETAIL:  Failing row contains (12, lemon, null, 2021-02-18 12:49:33.841487, 2021-02-18 12:49:33.841487).
+2021-02-18 12:49:33.841 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.845 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.845 GMT [6202] DETAIL:  Failing row contains (13, lemon, null, 2021-02-18 12:49:33.844732, 2021-02-18 12:49:33.844732).
+2021-02-18 12:49:33.845 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.848 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.848 GMT [6202] DETAIL:  Failing row contains (14, lemon, null, 2021-02-18 12:49:33.848444, 2021-02-18 12:49:33.848444).
+2021-02-18 12:49:33.848 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.853 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.853 GMT [6202] DETAIL:  Failing row contains (15, Lemon, null, 2021-02-18 12:49:33.853246, 2021-02-18 12:49:33.853246).
+2021-02-18 12:49:33.853 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:33.860 GMT [6202] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:33.860 GMT [6202] DETAIL:  Failing row contains (16, ice, null, 2021-02-18 12:49:33.859935, 2021-02-18 12:49:33.859935).
+2021-02-18 12:49:33.860 GMT [6202] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.017 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.017 GMT [6279] DETAIL:  Failing row contains (17, ice, null, 2021-02-18 12:49:48.016949, 2021-02-18 12:49:48.016949).
+2021-02-18 12:49:48.017 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.021 GMT [6279] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:49:48.021 GMT [6279] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:49:48.021 GMT [6279] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:49:48.027 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.027 GMT [6279] DETAIL:  Failing row contains (18, lemon, null, 2021-02-18 12:49:48.027369, 2021-02-18 12:49:48.027369).
+2021-02-18 12:49:48.027 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.032 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.032 GMT [6279] DETAIL:  Failing row contains (19, lemon, null, 2021-02-18 12:49:48.032119, 2021-02-18 12:49:48.032119).
+2021-02-18 12:49:48.032 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.036 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.036 GMT [6279] DETAIL:  Failing row contains (20, lemon, null, 2021-02-18 12:49:48.0359, 2021-02-18 12:49:48.0359).
+2021-02-18 12:49:48.036 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.039 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.039 GMT [6279] DETAIL:  Failing row contains (21, lemon, null, 2021-02-18 12:49:48.039451, 2021-02-18 12:49:48.039451).
+2021-02-18 12:49:48.039 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.043 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.043 GMT [6279] DETAIL:  Failing row contains (22, lemon, null, 2021-02-18 12:49:48.042978, 2021-02-18 12:49:48.042978).
+2021-02-18 12:49:48.043 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.049 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.049 GMT [6279] DETAIL:  Failing row contains (23, Lemon, null, 2021-02-18 12:49:48.048913, 2021-02-18 12:49:48.048913).
+2021-02-18 12:49:48.049 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:49:48.054 GMT [6279] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:49:48.054 GMT [6279] DETAIL:  Failing row contains (24, ice, null, 2021-02-18 12:49:48.054043, 2021-02-18 12:49:48.054043).
+2021-02-18 12:49:48.054 GMT [6279] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.137 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.137 GMT [6442] DETAIL:  Failing row contains (25, ice, null, 2021-02-18 12:51:29.13734, 2021-02-18 12:51:29.13734).
+2021-02-18 12:51:29.137 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.143 GMT [6442] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:51:29.143 GMT [6442] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:51:29.143 GMT [6442] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:51:29.149 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.149 GMT [6442] DETAIL:  Failing row contains (26, lemon, null, 2021-02-18 12:51:29.149055, 2021-02-18 12:51:29.149055).
+2021-02-18 12:51:29.149 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.154 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.154 GMT [6442] DETAIL:  Failing row contains (27, lemon, null, 2021-02-18 12:51:29.154372, 2021-02-18 12:51:29.154372).
+2021-02-18 12:51:29.154 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.158 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.158 GMT [6442] DETAIL:  Failing row contains (28, lemon, null, 2021-02-18 12:51:29.158269, 2021-02-18 12:51:29.158269).
+2021-02-18 12:51:29.158 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.163 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.163 GMT [6442] DETAIL:  Failing row contains (29, lemon, null, 2021-02-18 12:51:29.16289, 2021-02-18 12:51:29.16289).
+2021-02-18 12:51:29.163 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.167 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.167 GMT [6442] DETAIL:  Failing row contains (30, lemon, null, 2021-02-18 12:51:29.166952, 2021-02-18 12:51:29.166952).
+2021-02-18 12:51:29.167 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.171 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.171 GMT [6442] DETAIL:  Failing row contains (31, Lemon, null, 2021-02-18 12:51:29.171287, 2021-02-18 12:51:29.171287).
+2021-02-18 12:51:29.171 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:51:29.176 GMT [6442] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:51:29.176 GMT [6442] DETAIL:  Failing row contains (32, ice, null, 2021-02-18 12:51:29.176274, 2021-02-18 12:51:29.176274).
+2021-02-18 12:51:29.176 GMT [6442] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.654 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.654 GMT [6652] DETAIL:  Failing row contains (33, ice, null, 2021-02-18 12:56:31.654384, 2021-02-18 12:56:31.654384).
+2021-02-18 12:56:31.654 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.670 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.670 GMT [6652] DETAIL:  Failing row contains (34, lemon, null, 2021-02-18 12:56:31.669553, 2021-02-18 12:56:31.669553).
+2021-02-18 12:56:31.670 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.674 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.674 GMT [6652] DETAIL:  Failing row contains (35, lemon, null, 2021-02-18 12:56:31.674119, 2021-02-18 12:56:31.674119).
+2021-02-18 12:56:31.674 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.677 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.677 GMT [6652] DETAIL:  Failing row contains (36, lemon, null, 2021-02-18 12:56:31.677318, 2021-02-18 12:56:31.677318).
+2021-02-18 12:56:31.677 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.681 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.681 GMT [6652] DETAIL:  Failing row contains (37, lemon, null, 2021-02-18 12:56:31.680649, 2021-02-18 12:56:31.680649).
+2021-02-18 12:56:31.681 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.685 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.685 GMT [6652] DETAIL:  Failing row contains (38, lemon, null, 2021-02-18 12:56:31.685064, 2021-02-18 12:56:31.685064).
+2021-02-18 12:56:31.685 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.689 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.689 GMT [6652] DETAIL:  Failing row contains (39, Lemon, null, 2021-02-18 12:56:31.68922, 2021-02-18 12:56:31.68922).
+2021-02-18 12:56:31.689 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:31.696 GMT [6652] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:31.696 GMT [6652] DETAIL:  Failing row contains (40, ice, null, 2021-02-18 12:56:31.69595, 2021-02-18 12:56:31.69595).
+2021-02-18 12:56:31.696 GMT [6652] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.699 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.699 GMT [6714] DETAIL:  Failing row contains (41, ice, null, 2021-02-18 12:56:41.699063, 2021-02-18 12:56:41.699063).
+2021-02-18 12:56:41.699 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.703 GMT [6714] ERROR:  column ingredients.cocktail_id does not exist at character 42
+2021-02-18 12:56:41.703 GMT [6714] HINT:  Perhaps you meant to reference the column "ingredients.cocktails_id".
+2021-02-18 12:56:41.703 GMT [6714] STATEMENT:  SELECT COUNT(*) FROM "ingredients" WHERE "ingredients"."cocktail_id" = $1
+2021-02-18 12:56:41.710 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.710 GMT [6714] DETAIL:  Failing row contains (42, lemon, null, 2021-02-18 12:56:41.709608, 2021-02-18 12:56:41.709608).
+2021-02-18 12:56:41.710 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.714 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.714 GMT [6714] DETAIL:  Failing row contains (43, lemon, null, 2021-02-18 12:56:41.714379, 2021-02-18 12:56:41.714379).
+2021-02-18 12:56:41.714 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.718 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.718 GMT [6714] DETAIL:  Failing row contains (44, lemon, null, 2021-02-18 12:56:41.71805, 2021-02-18 12:56:41.71805).
+2021-02-18 12:56:41.718 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.722 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.722 GMT [6714] DETAIL:  Failing row contains (45, lemon, null, 2021-02-18 12:56:41.721864, 2021-02-18 12:56:41.721864).
+2021-02-18 12:56:41.722 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.727 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.727 GMT [6714] DETAIL:  Failing row contains (46, lemon, null, 2021-02-18 12:56:41.727134, 2021-02-18 12:56:41.727134).
+2021-02-18 12:56:41.727 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.732 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.732 GMT [6714] DETAIL:  Failing row contains (47, Lemon, null, 2021-02-18 12:56:41.731909, 2021-02-18 12:56:41.731909).
+2021-02-18 12:56:41.732 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:56:41.737 GMT [6714] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:56:41.737 GMT [6714] DETAIL:  Failing row contains (48, ice, null, 2021-02-18 12:56:41.736738, 2021-02-18 12:56:41.736738).
+2021-02-18 12:56:41.737 GMT [6714] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.704 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.704 GMT [6880] DETAIL:  Failing row contains (49, ice, null, 2021-02-18 12:59:45.703733, 2021-02-18 12:59:45.703733).
+2021-02-18 12:59:45.704 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.716 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.716 GMT [6880] DETAIL:  Failing row contains (50, lemon, null, 2021-02-18 12:59:45.716245, 2021-02-18 12:59:45.716245).
+2021-02-18 12:59:45.716 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.722 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.722 GMT [6880] DETAIL:  Failing row contains (51, lemon, null, 2021-02-18 12:59:45.721993, 2021-02-18 12:59:45.721993).
+2021-02-18 12:59:45.722 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.726 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.726 GMT [6880] DETAIL:  Failing row contains (52, lemon, null, 2021-02-18 12:59:45.726286, 2021-02-18 12:59:45.726286).
+2021-02-18 12:59:45.726 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.731 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.731 GMT [6880] DETAIL:  Failing row contains (53, lemon, null, 2021-02-18 12:59:45.731052, 2021-02-18 12:59:45.731052).
+2021-02-18 12:59:45.731 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.735 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.735 GMT [6880] DETAIL:  Failing row contains (54, lemon, null, 2021-02-18 12:59:45.734927, 2021-02-18 12:59:45.734927).
+2021-02-18 12:59:45.735 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.739 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.739 GMT [6880] DETAIL:  Failing row contains (55, Lemon, null, 2021-02-18 12:59:45.739283, 2021-02-18 12:59:45.739283).
+2021-02-18 12:59:45.739 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 12:59:45.744 GMT [6880] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 12:59:45.744 GMT [6880] DETAIL:  Failing row contains (56, ice, null, 2021-02-18 12:59:45.74434, 2021-02-18 12:59:45.74434).
+2021-02-18 12:59:45.744 GMT [6880] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.075 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.075 GMT [6958] DETAIL:  Failing row contains (57, ice, null, 2021-02-18 13:00:18.074799, 2021-02-18 13:00:18.074799).
+2021-02-18 13:00:18.075 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.085 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.085 GMT [6958] DETAIL:  Failing row contains (58, lemon, null, 2021-02-18 13:00:18.085294, 2021-02-18 13:00:18.085294).
+2021-02-18 13:00:18.085 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.091 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.091 GMT [6958] DETAIL:  Failing row contains (59, lemon, null, 2021-02-18 13:00:18.090951, 2021-02-18 13:00:18.090951).
+2021-02-18 13:00:18.091 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.095 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.095 GMT [6958] DETAIL:  Failing row contains (60, lemon, null, 2021-02-18 13:00:18.094825, 2021-02-18 13:00:18.094825).
+2021-02-18 13:00:18.095 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.099 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.099 GMT [6958] DETAIL:  Failing row contains (61, lemon, null, 2021-02-18 13:00:18.098733, 2021-02-18 13:00:18.098733).
+2021-02-18 13:00:18.099 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.104 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.104 GMT [6958] DETAIL:  Failing row contains (62, lemon, null, 2021-02-18 13:00:18.103941, 2021-02-18 13:00:18.103941).
+2021-02-18 13:00:18.104 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.108 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.108 GMT [6958] DETAIL:  Failing row contains (63, Lemon, null, 2021-02-18 13:00:18.108465, 2021-02-18 13:00:18.108465).
+2021-02-18 13:00:18.108 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:18.114 GMT [6958] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:18.114 GMT [6958] DETAIL:  Failing row contains (64, ice, null, 2021-02-18 13:00:18.113717, 2021-02-18 13:00:18.113717).
+2021-02-18 13:00:18.114 GMT [6958] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.860 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.860 GMT [7025] DETAIL:  Failing row contains (65, ice, null, 2021-02-18 13:00:31.860143, 2021-02-18 13:00:31.860143).
+2021-02-18 13:00:31.860 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.871 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.871 GMT [7025] DETAIL:  Failing row contains (66, lemon, null, 2021-02-18 13:00:31.87076, 2021-02-18 13:00:31.87076).
+2021-02-18 13:00:31.871 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.875 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.875 GMT [7025] DETAIL:  Failing row contains (67, lemon, null, 2021-02-18 13:00:31.875569, 2021-02-18 13:00:31.875569).
+2021-02-18 13:00:31.875 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.879 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.879 GMT [7025] DETAIL:  Failing row contains (68, lemon, null, 2021-02-18 13:00:31.879368, 2021-02-18 13:00:31.879368).
+2021-02-18 13:00:31.879 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.883 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.883 GMT [7025] DETAIL:  Failing row contains (69, lemon, null, 2021-02-18 13:00:31.883155, 2021-02-18 13:00:31.883155).
+2021-02-18 13:00:31.883 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.888 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.888 GMT [7025] DETAIL:  Failing row contains (70, lemon, null, 2021-02-18 13:00:31.88806, 2021-02-18 13:00:31.88806).
+2021-02-18 13:00:31.888 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.892 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.892 GMT [7025] DETAIL:  Failing row contains (71, Lemon, null, 2021-02-18 13:00:31.892239, 2021-02-18 13:00:31.892239).
+2021-02-18 13:00:31.892 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:31.896 GMT [7025] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:31.896 GMT [7025] DETAIL:  Failing row contains (72, ice, null, 2021-02-18 13:00:31.896632, 2021-02-18 13:00:31.896632).
+2021-02-18 13:00:31.896 GMT [7025] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.053 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.053 GMT [7141] DETAIL:  Failing row contains (73, ice, null, 2021-02-18 13:00:59.053017, 2021-02-18 13:00:59.053017).
+2021-02-18 13:00:59.053 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.065 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.065 GMT [7141] DETAIL:  Failing row contains (74, lemon, null, 2021-02-18 13:00:59.065373, 2021-02-18 13:00:59.065373).
+2021-02-18 13:00:59.065 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.070 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.070 GMT [7141] DETAIL:  Failing row contains (75, lemon, null, 2021-02-18 13:00:59.07061, 2021-02-18 13:00:59.07061).
+2021-02-18 13:00:59.070 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.074 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.074 GMT [7141] DETAIL:  Failing row contains (76, lemon, null, 2021-02-18 13:00:59.074317, 2021-02-18 13:00:59.074317).
+2021-02-18 13:00:59.074 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.078 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.078 GMT [7141] DETAIL:  Failing row contains (77, lemon, null, 2021-02-18 13:00:59.078433, 2021-02-18 13:00:59.078433).
+2021-02-18 13:00:59.078 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.083 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.083 GMT [7141] DETAIL:  Failing row contains (78, lemon, null, 2021-02-18 13:00:59.083035, 2021-02-18 13:00:59.083035).
+2021-02-18 13:00:59.083 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.087 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.087 GMT [7141] DETAIL:  Failing row contains (79, Lemon, null, 2021-02-18 13:00:59.087081, 2021-02-18 13:00:59.087081).
+2021-02-18 13:00:59.087 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:00:59.092 GMT [7141] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:00:59.092 GMT [7141] DETAIL:  Failing row contains (80, ice, null, 2021-02-18 13:00:59.09196, 2021-02-18 13:00:59.09196).
+2021-02-18 13:00:59.092 GMT [7141] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.854 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.854 GMT [7237] DETAIL:  Failing row contains (81, ice, null, 2021-02-18 13:02:23.853924, 2021-02-18 13:02:23.853924).
+2021-02-18 13:02:23.854 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.869 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.869 GMT [7237] DETAIL:  Failing row contains (82, lemon, null, 2021-02-18 13:02:23.869084, 2021-02-18 13:02:23.869084).
+2021-02-18 13:02:23.869 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.876 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.876 GMT [7237] DETAIL:  Failing row contains (83, lemon, null, 2021-02-18 13:02:23.876035, 2021-02-18 13:02:23.876035).
+2021-02-18 13:02:23.876 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.882 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.882 GMT [7237] DETAIL:  Failing row contains (84, lemon, null, 2021-02-18 13:02:23.88203, 2021-02-18 13:02:23.88203).
+2021-02-18 13:02:23.882 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.887 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.887 GMT [7237] DETAIL:  Failing row contains (85, lemon, null, 2021-02-18 13:02:23.887117, 2021-02-18 13:02:23.887117).
+2021-02-18 13:02:23.887 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.893 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.893 GMT [7237] DETAIL:  Failing row contains (86, lemon, null, 2021-02-18 13:02:23.892688, 2021-02-18 13:02:23.892688).
+2021-02-18 13:02:23.893 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.899 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.899 GMT [7237] DETAIL:  Failing row contains (87, Lemon, null, 2021-02-18 13:02:23.898697, 2021-02-18 13:02:23.898697).
+2021-02-18 13:02:23.899 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:23.914 GMT [7237] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:23.914 GMT [7237] DETAIL:  Failing row contains (88, ice, null, 2021-02-18 13:02:23.91354, 2021-02-18 13:02:23.91354).
+2021-02-18 13:02:23.914 GMT [7237] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.660 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.660 GMT [7309] DETAIL:  Failing row contains (89, ice, null, 2021-02-18 13:02:55.659563, 2021-02-18 13:02:55.659563).
+2021-02-18 13:02:55.660 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.675 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.675 GMT [7309] DETAIL:  Failing row contains (90, lemon, null, 2021-02-18 13:02:55.674963, 2021-02-18 13:02:55.674963).
+2021-02-18 13:02:55.675 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.688 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.688 GMT [7309] DETAIL:  Failing row contains (91, lemon, null, 2021-02-18 13:02:55.688106, 2021-02-18 13:02:55.688106).
+2021-02-18 13:02:55.688 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.694 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.694 GMT [7309] DETAIL:  Failing row contains (92, lemon, null, 2021-02-18 13:02:55.693719, 2021-02-18 13:02:55.693719).
+2021-02-18 13:02:55.694 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.699 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.699 GMT [7309] DETAIL:  Failing row contains (93, lemon, null, 2021-02-18 13:02:55.698946, 2021-02-18 13:02:55.698946).
+2021-02-18 13:02:55.699 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.705 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.705 GMT [7309] DETAIL:  Failing row contains (94, lemon, null, 2021-02-18 13:02:55.704782, 2021-02-18 13:02:55.704782).
+2021-02-18 13:02:55.705 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.712 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.712 GMT [7309] DETAIL:  Failing row contains (95, Lemon, null, 2021-02-18 13:02:55.71203, 2021-02-18 13:02:55.71203).
+2021-02-18 13:02:55.712 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:02:55.719 GMT [7309] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:02:55.719 GMT [7309] DETAIL:  Failing row contains (96, ice, null, 2021-02-18 13:02:55.719163, 2021-02-18 13:02:55.719163).
+2021-02-18 13:02:55.719 GMT [7309] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.569 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.569 GMT [7419] DETAIL:  Failing row contains (97, ice, null, 2021-02-18 13:03:32.568224, 2021-02-18 13:03:32.568224).
+2021-02-18 13:03:32.569 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.581 GMT [7419] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:03:32.581 GMT [7419] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:03:32.581 GMT [7419] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:03:32.589 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.589 GMT [7419] DETAIL:  Failing row contains (98, lemon, null, 2021-02-18 13:03:32.588501, 2021-02-18 13:03:32.588501).
+2021-02-18 13:03:32.589 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.598 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.598 GMT [7419] DETAIL:  Failing row contains (99, lemon, null, 2021-02-18 13:03:32.59813, 2021-02-18 13:03:32.59813).
+2021-02-18 13:03:32.598 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.605 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.605 GMT [7419] DETAIL:  Failing row contains (100, lemon, null, 2021-02-18 13:03:32.604466, 2021-02-18 13:03:32.604466).
+2021-02-18 13:03:32.605 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.611 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.611 GMT [7419] DETAIL:  Failing row contains (101, lemon, null, 2021-02-18 13:03:32.610773, 2021-02-18 13:03:32.610773).
+2021-02-18 13:03:32.611 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.616 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.616 GMT [7419] DETAIL:  Failing row contains (102, lemon, null, 2021-02-18 13:03:32.616177, 2021-02-18 13:03:32.616177).
+2021-02-18 13:03:32.616 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.622 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.622 GMT [7419] DETAIL:  Failing row contains (103, Lemon, null, 2021-02-18 13:03:32.622287, 2021-02-18 13:03:32.622287).
+2021-02-18 13:03:32.622 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:32.629 GMT [7419] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:32.629 GMT [7419] DETAIL:  Failing row contains (104, ice, null, 2021-02-18 13:03:32.628924, 2021-02-18 13:03:32.628924).
+2021-02-18 13:03:32.629 GMT [7419] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.565 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.565 GMT [7485] DETAIL:  Failing row contains (105, ice, null, 2021-02-18 13:03:49.565061, 2021-02-18 13:03:49.565061).
+2021-02-18 13:03:49.565 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.572 GMT [7485] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:03:49.572 GMT [7485] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:03:49.572 GMT [7485] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:03:49.583 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.583 GMT [7485] DETAIL:  Failing row contains (106, lemon, null, 2021-02-18 13:03:49.583217, 2021-02-18 13:03:49.583217).
+2021-02-18 13:03:49.583 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.592 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.592 GMT [7485] DETAIL:  Failing row contains (107, lemon, null, 2021-02-18 13:03:49.591685, 2021-02-18 13:03:49.591685).
+2021-02-18 13:03:49.592 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.598 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.598 GMT [7485] DETAIL:  Failing row contains (108, lemon, null, 2021-02-18 13:03:49.597934, 2021-02-18 13:03:49.597934).
+2021-02-18 13:03:49.598 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.604 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.604 GMT [7485] DETAIL:  Failing row contains (109, lemon, null, 2021-02-18 13:03:49.60403, 2021-02-18 13:03:49.60403).
+2021-02-18 13:03:49.604 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.609 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.609 GMT [7485] DETAIL:  Failing row contains (110, lemon, null, 2021-02-18 13:03:49.608677, 2021-02-18 13:03:49.608677).
+2021-02-18 13:03:49.609 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.615 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.615 GMT [7485] DETAIL:  Failing row contains (111, Lemon, null, 2021-02-18 13:03:49.614727, 2021-02-18 13:03:49.614727).
+2021-02-18 13:03:49.615 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:03:49.623 GMT [7485] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:03:49.623 GMT [7485] DETAIL:  Failing row contains (112, ice, null, 2021-02-18 13:03:49.622597, 2021-02-18 13:03:49.622597).
+2021-02-18 13:03:49.623 GMT [7485] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.892 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.892 GMT [7642] DETAIL:  Failing row contains (113, ice, null, 2021-02-18 13:04:56.891831, 2021-02-18 13:04:56.891831).
+2021-02-18 13:04:56.892 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.899 GMT [7642] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:04:56.899 GMT [7642] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:04:56.899 GMT [7642] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:04:56.908 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.908 GMT [7642] DETAIL:  Failing row contains (114, lemon, null, 2021-02-18 13:04:56.907931, 2021-02-18 13:04:56.907931).
+2021-02-18 13:04:56.908 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.916 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.916 GMT [7642] DETAIL:  Failing row contains (115, lemon, null, 2021-02-18 13:04:56.915661, 2021-02-18 13:04:56.915661).
+2021-02-18 13:04:56.916 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.923 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.923 GMT [7642] DETAIL:  Failing row contains (116, lemon, null, 2021-02-18 13:04:56.922643, 2021-02-18 13:04:56.922643).
+2021-02-18 13:04:56.923 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.930 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.930 GMT [7642] DETAIL:  Failing row contains (117, lemon, null, 2021-02-18 13:04:56.929732, 2021-02-18 13:04:56.929732).
+2021-02-18 13:04:56.930 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.936 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.936 GMT [7642] DETAIL:  Failing row contains (118, lemon, null, 2021-02-18 13:04:56.935624, 2021-02-18 13:04:56.935624).
+2021-02-18 13:04:56.936 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.942 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.942 GMT [7642] DETAIL:  Failing row contains (119, Lemon, null, 2021-02-18 13:04:56.941978, 2021-02-18 13:04:56.941978).
+2021-02-18 13:04:56.942 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:04:56.949 GMT [7642] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:04:56.949 GMT [7642] DETAIL:  Failing row contains (120, ice, null, 2021-02-18 13:04:56.949034, 2021-02-18 13:04:56.949034).
+2021-02-18 13:04:56.949 GMT [7642] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.007 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.007 GMT [7856] DETAIL:  Failing row contains (121, ice, null, 2021-02-18 13:06:05.006702, 2021-02-18 13:06:05.006702).
+2021-02-18 13:06:05.007 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.015 GMT [7856] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:06:05.015 GMT [7856] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:06:05.015 GMT [7856] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:06:05.026 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.026 GMT [7856] DETAIL:  Failing row contains (122, lemon, null, 2021-02-18 13:06:05.025705, 2021-02-18 13:06:05.025705).
+2021-02-18 13:06:05.026 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.037 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.037 GMT [7856] DETAIL:  Failing row contains (123, lemon, null, 2021-02-18 13:06:05.036213, 2021-02-18 13:06:05.036213).
+2021-02-18 13:06:05.037 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.043 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.043 GMT [7856] DETAIL:  Failing row contains (124, lemon, null, 2021-02-18 13:06:05.043451, 2021-02-18 13:06:05.043451).
+2021-02-18 13:06:05.043 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.050 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.050 GMT [7856] DETAIL:  Failing row contains (125, lemon, null, 2021-02-18 13:06:05.05003, 2021-02-18 13:06:05.05003).
+2021-02-18 13:06:05.050 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.056 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.056 GMT [7856] DETAIL:  Failing row contains (126, lemon, null, 2021-02-18 13:06:05.055733, 2021-02-18 13:06:05.055733).
+2021-02-18 13:06:05.056 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.062 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.062 GMT [7856] DETAIL:  Failing row contains (127, Lemon, null, 2021-02-18 13:06:05.061742, 2021-02-18 13:06:05.061742).
+2021-02-18 13:06:05.062 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:06:05.067 GMT [7856] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:06:05.067 GMT [7856] DETAIL:  Failing row contains (128, ice, null, 2021-02-18 13:06:05.067371, 2021-02-18 13:06:05.067371).
+2021-02-18 13:06:05.067 GMT [7856] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.414 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.414 GMT [8008] DETAIL:  Failing row contains (129, ice, null, 2021-02-18 13:07:00.413421, 2021-02-18 13:07:00.413421).
+2021-02-18 13:07:00.414 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.423 GMT [8008] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:07:00.423 GMT [8008] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:07:00.423 GMT [8008] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:07:00.431 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.431 GMT [8008] DETAIL:  Failing row contains (130, lemon, null, 2021-02-18 13:07:00.431167, 2021-02-18 13:07:00.431167).
+2021-02-18 13:07:00.431 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.438 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.438 GMT [8008] DETAIL:  Failing row contains (131, lemon, null, 2021-02-18 13:07:00.437656, 2021-02-18 13:07:00.437656).
+2021-02-18 13:07:00.438 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.442 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.442 GMT [8008] DETAIL:  Failing row contains (132, lemon, null, 2021-02-18 13:07:00.442446, 2021-02-18 13:07:00.442446).
+2021-02-18 13:07:00.442 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.448 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.448 GMT [8008] DETAIL:  Failing row contains (133, lemon, null, 2021-02-18 13:07:00.447549, 2021-02-18 13:07:00.447549).
+2021-02-18 13:07:00.448 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.454 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.454 GMT [8008] DETAIL:  Failing row contains (134, lemon, null, 2021-02-18 13:07:00.454455, 2021-02-18 13:07:00.454455).
+2021-02-18 13:07:00.454 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.461 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.461 GMT [8008] DETAIL:  Failing row contains (135, Lemon, null, 2021-02-18 13:07:00.461258, 2021-02-18 13:07:00.461258).
+2021-02-18 13:07:00.461 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:00.469 GMT [8008] ERROR:  null value in column "cocktails_id" of relation "ingredients" violates not-null constraint
+2021-02-18 13:07:00.469 GMT [8008] DETAIL:  Failing row contains (136, ice, null, 2021-02-18 13:07:00.469162, 2021-02-18 13:07:00.469162).
+2021-02-18 13:07:00.469 GMT [8008] STATEMENT:  INSERT INTO "ingredients" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"
+2021-02-18 13:07:56.878 GMT [8166] ERROR:  column doses.ingredient_id does not exist at character 79
+2021-02-18 13:07:56.878 GMT [8166] HINT:  Perhaps you meant to reference the column "doses.ingredients_id".
+2021-02-18 13:07:56.878 GMT [8166] STATEMENT:  SELECT COUNT(*) FROM "ingredients" INNER JOIN "doses" ON "ingredients"."id" = "doses"."ingredient_id" WHERE "doses"."cocktail_id" = $1
+2021-02-18 13:09:25.477 GMT [8428] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 13:09:25.477 GMT [8428] DETAIL:  Key (id)=(9) is still referenced from table "doses".
+2021-02-18 13:09:25.477 GMT [8428] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 13:09:44.375 GMT [8491] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
+2021-02-18 13:09:44.375 GMT [8491] DETAIL:  Key (id)=(19) is still referenced from table "doses".
+2021-02-18 13:09:44.375 GMT [8491] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
