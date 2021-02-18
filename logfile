@@ -575,3 +575,5 @@
 2021-02-18 16:32:04.194 GMT [23898] ERROR:  update or delete on table "ingredients" violates foreign key constraint "fk_rails_961afcf26a" on table "doses"
 2021-02-18 16:32:04.194 GMT [23898] DETAIL:  Key (id)=(136) is still referenced from table "doses".
 2021-02-18 16:32:04.194 GMT [23898] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
+2021-02-18 18:32:34.169 GMT [26676] ERROR:  column "picture_url" of relation "cocktails" already exists
+2021-02-18 18:32:34.169 GMT [26676] STATEMENT:  ALTER TABLE "cocktails" ADD "picture_url" character varying

@@ -1,22 +1,25 @@
 <div class="container">
-  <div class="row">
-    <div class="col-12">
-      <h1>Cocktails</h1>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://barmagazine.co.uk/wp-content/uploads/2020/08/cocktails.png);">
+    <div class="container">
+      <h1>The Cocktail Club</h1>
+      <%= link_to 'Create a new concoction', new_cocktail_path, class: "btn btn-ghost" %>
     </div>
   </div>
-
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-3">
-        <div class="cocktail-card">
+        <div class="card-category" >
           <div class="cocktail-card-name">
             <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %></h3>
+          </div>
+          <div class="cocktail-card-image">
+            <img src="" alt="">
           </div>
         </div>
       </div>
     <% end %>
   </div>
-  <%= link_to 'Add a new cocktail', new_cocktail_path %>
+
 </div>
 
 
