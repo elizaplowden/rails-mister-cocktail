@@ -11,4 +11,24 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "components/card"
+@import "components/card";
+@import "components/show-card";
+@import "pages/dose_form";
+@import "pages/cocktail_form";
+// @import "pages/cocktails";
+// @import "pages/doses"
+
+
+
+// Media queries
+@media(max-width: 900px){
+  .container{
+    grid-template-columns: 3fr 3fr 3fr 3fr
+  }
+}
+
+@media(max-width: 500px){
+  .container{
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+}
