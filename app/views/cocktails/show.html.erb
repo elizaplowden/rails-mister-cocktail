@@ -1,10 +1,22 @@
+
+
 <div class="container">
-  <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key, height: 500, width: 500, crop: :fill %>')">
+  <div class="show-card-container">
+     <div class="cocktail-image">
+    <% if @cocktail.photo.attached? %>
+      <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %>')">
+
+    <% else %>
+      <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.seriouseats.com/recipes/images/2015/04/20150323-cocktails-vicky-wasik-margarita.jpg')">
+    <% end %>
+
+
     <div class="show-card-banner">
       <h2><%= @cocktail.name.capitalize %></h2>
     </div>
       <div class="show-card-content">
         <h3>Ingredients:</h3>
+        <div class="ingredient-container">
           <% doses = @cocktail.doses %>
           <ul>
             <% doses.each do |dose| %>
@@ -15,11 +27,20 @@
               </li>
             <% end %>
           </ul>
+        </div>
       </div>
-
-  </div>
-   <div class="show-card-links">
+  <div class="show-card-links">
       <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-ghost" %>
       <%= link_to 'Go back to cocktails', cocktails_path, class: "btn btn-ghost"%>
     </div>
+
+    </div>
+
+
+  </div>
+  </div>
+  </div>
+
+
+
 </div>

@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://barmagazine.co.uk/wp-content/uploads/2020/08/cocktails.png);">
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://barmagazine.co.uk/wp-content/uploads/2020/08/cocktails.png');">
     <div class="container">
       <h1>The Cocktail Club</h1>
       <%= link_to 'Create a new concoction', new_cocktail_path, class: "btn btn-ghost" %>
@@ -9,13 +9,15 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-3">
         <% if cocktail.photo.attached? %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path cocktail.photo.key, height: 500, width: 500, crop: :fill %>')"></div>
-        <% else %>
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://barmagazine.co.uk/wp-content/uploads/2020/08/cocktails.png')"></div>
-        <% end %>
-          <div class="cocktail-card-name">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path cocktail.photo.key, height: 500, width: 500, crop: :fill %>')">
             <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %></h3>
           </div>
+        <% else %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.seriouseats.com/recipes/images/2015/04/20150323-cocktails-vicky-wasik-margarita.jpg')">
+            <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %></h3>
+          </div>
+        <% end %>
+
       </div>
     <% end %>
   </div>
