@@ -577,3 +577,7 @@
 2021-02-18 16:32:04.194 GMT [23898] STATEMENT:  DELETE FROM "ingredients" WHERE "ingredients"."id" = $1
 2021-02-18 18:32:34.169 GMT [26676] ERROR:  column "picture_url" of relation "cocktails" already exists
 2021-02-18 18:32:34.169 GMT [26676] STATEMENT:  ALTER TABLE "cocktails" ADD "picture_url" character varying
+2021-02-19 11:28:45.901 GMT [31760] ERROR:  database "rails_mister_cocktail_development" already exists
+2021-02-19 11:28:45.901 GMT [31760] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_development" ENCODING = 'unicode'
+2021-02-19 11:28:45.912 GMT [31762] ERROR:  database "rails_mister_cocktail_test" already exists
+2021-02-19 11:28:45.912 GMT [31762] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_test" ENCODING = 'unicode'
