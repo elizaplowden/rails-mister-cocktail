@@ -1,28 +1,22 @@
 <div class="cocktail-form-container" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://barmagazine.co.uk/wp-content/uploads/2020/08/cocktails.png')">
   <div class="cocktail-form-card">
     <h2>Add a new cocktail</h2>
-  <div class="cocktail-form" >
-    <%= simple_form_for(@cocktail) do |f|%>
-      <div class="form-inputs">
-        <%= f.input :name %>
-      </div>
+    <div class="cocktail-form" >
+      <%= simple_form_for(@cocktail) do |f|%>
+        <div class="form-inputs">
+          <%= f.input :name %>
+        </div>
 
-      <div class="form-inputs">
-        <%= f.input :photo, as: :file %>
-      </div>
-      <div class="form-actions">
-        <%= f.button :submit, class: "btn btn-ghost"%>
-      </div>
-    <% end %>
+        <div class="form-inputs">
+          <%= f.input :photo, as: :file %>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, class: "btn btn-ghost"%>
+        </div>
+      <% end %>
+    </div>
+    <div class="cocktail-form-links">
+      <%= link_to 'Back', cocktails_path %>
+    </div>
   </div>
-  <div class="cocktail-form-links">
-    <%= link_to 'Back', cocktails_path %>
-  </div>
-
-  </div>
-
-
-
-
-
 </div>
