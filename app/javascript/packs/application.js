@@ -9,6 +9,31 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+import { initSelect2 } from '../components/init_select2';
+
+document.addEventListener("turbolinks:load", function() {
+  initSelect2();
+});
+
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#sweet-alert', {
+  title: "Confirm",
+  text: "Are you sure?",
+  icon: "success"
+}, (value) => {
+  console.log(value);
+});
+
+import { loadDynamicBannerText } from '../components/banner';
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  // [...]
+  loadDynamicBannerText();
+});

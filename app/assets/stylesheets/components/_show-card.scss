@@ -89,15 +89,17 @@ $off-white: #DBDBDB;
 
 // Media queries
 @media (max-width: 900px){
-  .show-card{
+  .show-card-container{
     grid-template-columns: 3fr 3fr 3fr 3fr;
+    height: 50px;
   }
 }
 
 @media (max-width: 500px){
-  .show-card{
+  .show-card-container{
     grid-template-columns: 4fr 4fr 4fr;
     font-size: 20px;
+    height: 50px;
   }
 }
 

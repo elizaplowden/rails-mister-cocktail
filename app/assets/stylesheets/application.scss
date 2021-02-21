@@ -7,6 +7,7 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'select2/dist/css/select2';
 
 // Your CSS partials
 @import "components/index";
@@ -23,25 +24,7 @@
 
 /*Media Queries*/
 
-/*Smallest device*/
-@media (min-width: 100px) and (max-width: 575px) {
-   .row{
-    grid-template-columns: 1fr 1fr;
-  }
-    h3{
-    font-size: 20px;
-  }
 
+body {
+  background-color: white;
 }
-
-/*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-
-  .row{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-
-}
-
-/*Medium devices (tablets, 768px and up)*/
