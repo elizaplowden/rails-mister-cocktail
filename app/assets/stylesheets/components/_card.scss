@@ -7,7 +7,7 @@
   align-items: center;
   text-align: center;
   color: white;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
@@ -18,18 +18,30 @@
   }
 }
 
-// .cocktail-card-image{
-//   background-size: cover;
-//   height: 180px;
-//   width: 100%;
-//   display: flex;
-//   position: absolute;
-//   justify-content: center;
+.row{
+  margin-bottom: 50px;
 
-// }
+}
 
-// .row{
-//   display:grid;
-// }
+@media (max-width: 900px){
+  .card-category{
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    height: 150px;
+  }
+}
 
+@media (max-width: 500px){
+  .card-category{
+    grid-template-columns: 4fr 4fr 4fr;
+    font-size: 20px;
+    height: 120px;
+  }
+}
 
+@media (max-width: 300px){
+ .card-category{
+    grid-template-columns: 6fr 6fr;
+    font-size: 16px;
+    height: 100px;
+  }
+}

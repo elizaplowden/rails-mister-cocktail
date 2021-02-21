@@ -14,7 +14,7 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
 
-      <div class="col-12 col-sm-6 col-md-3 c">
+      <div class="col-6 col-sm-4 col-md-3 c">
         <% if cocktail.photo.attached? %>
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path cocktail.photo.key, height: 500, width: 500, crop: :fill %>')">
             <h3><%= link_to cocktail.name.capitalize, cocktail_path(cocktail.id) %></h3>
