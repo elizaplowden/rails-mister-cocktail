@@ -4,7 +4,7 @@
   <div class="show-card-container">
     <div class="cocktail-image">
         <% if @cocktail.photo.attached? %>
-          <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key %>')">
+          <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.photo.key, crop: :scale %>')">
         <% else %>
           <div class="show-card" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://www.seriouseats.com/recipes/images/2015/04/20150323-cocktails-vicky-wasik-margarita.jpg')">
         <% end %>
@@ -25,11 +25,12 @@
             <% end %>
           </ul>
         </div>
-      </div>
-    <div class="show-card-links">
+        <div class="show-card-links">
       <%= link_to 'Add a new dose', new_cocktail_dose_path(@cocktail), class: "btn btn-ghost" %>
       <%= link_to 'Go back to cocktails', cocktails_path, class: "btn btn-ghost"%>
     </div>
+      </div>
+
         </div>
           </div>
     </div>
