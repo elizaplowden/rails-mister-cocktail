@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <%= stylesheet_pack_tag 'application' %>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
@@ -15,25 +15,24 @@
     <%= yield %>
   </body>
   <footer>
-      <div class="footer">
-    <div class="links">
-      <ul class="list-inline">
-        <li>
-          <p>Designed by Eliza Plowden </p>
-        </li>
-        <li>
-           <%= link_to 'https://github.com/elizaplowden' do %>
-            <i class="fab fa-github"></i>
-            <% end %>
-        </li>
-        <li>
-           <%= link_to 'https://www.linkedin.com/in/eliza-plowden-90b18378/' do %>
-            <i class="fab fa-linkedin"></i>
-            <% end %>
-        </li>
-        </ul>
+    <div class="footer">
+      <div class="links">
+        <ul class="list-inline">
+          <li>
+            <p>Designed by Eliza Plowden </p>
+          </li>
+          <li>
+             <%= link_to 'https://github.com/elizaplowden' do %>
+              <i class="fab fa-github"></i>
+              <% end %>
+          </li>
+          <li>
+             <%= link_to 'https://www.linkedin.com/in/eliza-plowden-90b18378/' do %>
+              <i class="fab fa-linkedin"></i>
+              <% end %>
+          </li>
+          </ul>
+      </div>
     </div>
-
-  </div>
   </footer>
 </html>

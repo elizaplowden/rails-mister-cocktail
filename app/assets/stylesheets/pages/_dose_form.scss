@@ -53,6 +53,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .dose-form-links{
@@ -61,3 +62,40 @@
   align-items: flex-end;
 
 }
+
+.dose-form-container{
+  margin-bottom: 150px;
+}
+
+
+@media (max-width: 900px){
+  .dose-form-container{
+    margin: 30px;
+    h2{
+      margin: 10px;
+    }
+  }
+}
+
+@media (max-width: 500px){
+  .dose-form-container{
+    margin: 20px;
+    h2 {
+      margin: 10px;
+      font-size: 26px;
+    }
+
+  }
+}
+
+@media (max-width: 300px){
+ .dose-form-container{
+  margin: 15px;
+    h2 {
+      margin: 20px;
+      font-size: 20px;
+    }
+  }
+}
+
+

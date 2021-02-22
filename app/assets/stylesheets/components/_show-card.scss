@@ -48,7 +48,9 @@ $off-white: #DBDBDB;
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
-
+  ul{
+    list-style: none;
+  }
   // align-items: flex-end;
   // padding-bottom: 200px;
 }

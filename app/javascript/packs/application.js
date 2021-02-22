@@ -8,32 +8,27 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
+import "select2"
+import "jquery"
 
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-import { initSelect2 } from '../components/init_select2';
+import { initSelect2 } from '../components/init_select2.js';
 
 document.addEventListener("turbolinks:load", function() {
   initSelect2();
 });
 
-import { initSweetalert } from '../plugins/init_sweetalert';
+// import { initSweetalert } from '../plugins/init_sweetalert';
 
-initSweetalert('#sweet-alert', {
-  title: "Confirm",
-  text: "Are you sure?",
-  icon: "success"
-}, (value) => {
-  console.log(value);
-});
+// initSweetalert('#sweet-alert', {
+//   title: "Confirm",
+//   text: "Are you sure?",
+//   icon: "success"
+// }, (value) => {
+//   console.log(value);
+// });
 
-import { loadDynamicBannerText } from '../components/banner';
-
-document.addEventListener('turbolinks:load', () => {
-  // Call your JS functions here
-  // [...]
-  loadDynamicBannerText();
-});

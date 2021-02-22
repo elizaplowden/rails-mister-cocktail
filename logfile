@@ -581,3 +581,9 @@
 2021-02-19 11:28:45.901 GMT [31760] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_development" ENCODING = 'unicode'
 2021-02-19 11:28:45.912 GMT [31762] ERROR:  database "rails_mister_cocktail_test" already exists
 2021-02-19 11:28:45.912 GMT [31762] STATEMENT:  CREATE DATABASE "rails_mister_cocktail_test" ENCODING = 'unicode'
+2021-02-22 16:41:33.617 GMT [70740] ERROR:  date/time field value out of range: "267281"
+2021-02-22 16:41:33.617 GMT [70740] HINT:  Perhaps you need a different "datestyle" setting.
+2021-02-22 16:41:33.617 GMT [70740] STATEMENT:  INSERT INTO "bookings" ("booked_from", "booked_to", "user_id", "yurt_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"
+2021-02-22 17:04:57.638 GMT [71855] ERROR:  null value in column "user_id" of relation "yurts" violates not-null constraint
+2021-02-22 17:04:57.638 GMT [71855] DETAIL:  Failing row contains (4, Teepee, A great TeePee, 10, Suffolk, 55, null, 2021-02-22 17:04:57.637697, 2021-02-22 17:04:57.637697).
+2021-02-22 17:04:57.638 GMT [71855] STATEMENT:  INSERT INTO "yurts" ("title", "description", "max_capacity", "location", "day_rate", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"
