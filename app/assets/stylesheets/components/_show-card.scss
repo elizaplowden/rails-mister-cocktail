@@ -29,8 +29,8 @@ $off-white: #DBDBDB;
   // width: 600px;
   display: block;
   justify-content: center;
-  padding: 20px;
-  margin: 60px;
+  padding: 10px;
+  // margin: 20px;
 }
 
 .show-card-banner{
@@ -48,9 +48,12 @@ $off-white: #DBDBDB;
   display: flex;
   justify-content: center;
   margin-bottom: 200px;
+  padding-left: 10px;
+  padding-right: 10px;
   ul{
     list-style: none;
   }
+
   // align-items: flex-end;
   // padding-bottom: 200px;
 }
@@ -87,7 +90,7 @@ $off-white: #DBDBDB;
 @media (max-width: 900px){
   .show-card-container{
     grid-template-columns: 3fr 3fr 3fr 3fr;
-    margin: 20px;
+    margin: 10px;
 
   }
 
@@ -96,14 +99,24 @@ $off-white: #DBDBDB;
 @media (max-width: 500px){
   .show-card-container{
     grid-template-columns: 4fr 4fr 4fr;
-    font-size: 20px;
-    margin: 20px;
+    font-size: 18px;
+    margin: 10px;
 
 
   }
 }
 
 
+
+@media (max-width: 300px){
+  .show-card-container{
+    grid-template-columns: 4fr 4fr 4fr;
+    font-size: 16px;
+    margin: 10px;
+
+
+  }
+}
 
 
 
