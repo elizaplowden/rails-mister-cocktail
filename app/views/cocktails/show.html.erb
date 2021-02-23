@@ -20,7 +20,7 @@
               <li class="#">
                 <%= dose.description %>
                 <%= dose.ingredient.name %>
-                <%= link_to icon('far', 'trash-alt'), dose_path(dose.id), id: 'sweet-alert', method: :delete, id: 'delete-link' %>
+                <%= link_to icon('far', 'trash-alt'), dose_path(dose.id), id: 'sweet-alert', method: :delete, id: 'delete-link', data: { confirm: "Are you sure?"} %>
               </li>
             <% end %>
           </ul>

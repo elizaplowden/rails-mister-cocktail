@@ -12,6 +12,8 @@ import "select2"
 import "jquery"
 
 
+
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
@@ -22,13 +24,6 @@ document.addEventListener("turbolinks:load", function() {
   initSelect2();
 });
 
-// import { initSweetalert } from '../plugins/init_sweetalert';
+loadDynamicBannerText()
 
-// initSweetalert('#sweet-alert', {
-//   title: "Confirm",
-//   text: "Are you sure?",
-//   icon: "success"
-// }, (value) => {
-//   console.log(value);
-// });
-
+import { loadDynamicBannerText} from '../components/banner.js';
